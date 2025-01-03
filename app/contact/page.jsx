@@ -9,48 +9,48 @@ import t from "@/assets/img/contact/t.png"
  */
 const page = () => {
   return (
-    <>
-      <div className="flex items-center justify-center min-h-screen bg-transparent m-10">
-        
-        <div className="w-full max-w-lg p-6 bg-white rounded-lg shadow-lg">
-          <FormularioContacto />
-        </div>
+    <div className="flex flex-col md:flex-row items-center justify-center min-h-screen bg-transparent m-4 md:m-10">
+
+  <div className="w-full max-w-md p-4 bg-white rounded-lg shadow-lg mb-6 md:mb-0 md:mr-6">
+    <FormularioContacto />
+  </div>
+
   
-        
-        <div className="w-1/4 h-4/5 bg-transparent rounded-lg p-6 flex flex-col items-center space-y-6 shadow-lg">
-          <h2 className="text-2xl text-white font-semibold mb-4">Síguenos</h2>
-  
-          
-          <div className="flex flex-col items-center space-y-6">
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <img
-                src={f.src}
-                alt="Facebook"
-                className="w-12 h-12 hover:opacity-75 transition-all duration-300"
-              />
-            </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <img
-                src={t.src}
-                alt="Twitter"
-                className="w-12 h-12 hover:opacity-75 transition-all duration-300"
-              />
-            </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <img
-                src={i.src}
-                alt="Instagram"
-                className="w-12 h-12 hover:opacity-75 transition-all duration-300"
-              />
-            </a>
-          </div>
-  
-          <div className="text-white text-sm text-center">
-            <p>Conéctate con nosotros en nuestras redes sociales y mantente al día con nuestras novedades.</p>
-          </div>
-        </div>
-      </div>
-    </>
+  <div className="w-full max-w-sm md:w-1/4 p-4 bg-transparent rounded-lg flex flex-col items-center space-y-4 shadow-lg">
+    <h2 className="text-xl md:text-2xl text-white font-semibold mb-4">Síguenos</h2>
+
+    <div className="flex flex-row md:flex-col items-center justify-center space-x-4 md:space-x-0 md:space-y-4">
+      <a href="#" target="_blank" rel="noopener noreferrer">
+        <img
+          src={f.src}
+          alt="Facebook"
+          className="w-10 h-10 md:w-12 md:h-12 hover:opacity-75 transition-all duration-300"
+        />
+      </a>
+      <a href="#" target="_blank" rel="noopener noreferrer">
+        <img
+          src={t.src}
+          alt="Twitter"
+          className="w-10 h-10 md:w-12 md:h-12 hover:opacity-75 transition-all duration-300"
+        />
+      </a>
+      <a href="#" target="_blank" rel="noopener noreferrer">
+        <img
+          src={i.src}
+          alt="Instagram"
+          className="w-10 h-10 md:w-12 md:h-12 hover:opacity-75 transition-all duration-300"
+        />
+      </a>
+    </div>
+
+    <div className="text-white text-center text-sm">
+      <p>
+        Conéctate con nosotros en nuestras redes sociales y mantente al día con nuestras novedades.
+      </p>
+    </div>
+  </div>
+</div>
+
   )
   
 }

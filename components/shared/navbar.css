@@ -1,0 +1,8 @@
+.glowing-text:hover {
+    text-shadow: 0 0 5px #ffffff, 0 0 5px #000000b0, 0 0 5px rgba(238, 195, 54, 0.438)
+    
+  }
+.glowing-text
+{
+  transition:1s;
+}
